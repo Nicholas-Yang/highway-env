@@ -15,11 +15,9 @@ I choose DQN pipeline to achieve the homework
     <em>Training Result.</em>
 </p>
 
-### Highway with PPO [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/eleurent/highway-env/blob/master/scripts/sb3_highway_ppo.ipynb)
+## Comments
 
-Train a `highway-v0` policy with PPO.
-
-### Highway + DQN using a CNN and image observations [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/eleurent/highway-env/blob/master/scripts/sb3_highway_dqn_cnn.ipynb)
-
-Train a `highway-v0` policy with DQN, while using image observations and a CNN model architecture.
+DQN (Deep Q Learning) uses a neural network to replace Q table. The Q network will predict the optimal actions based on Q value using temporal difference method. Also the parameters of the network can be updated using gradient descent method.
+The code can be divided into three parts including training,testing and visulization.
+Since DQN is too simple and the hyperparameter of the network is not very optimal. The mean reward is around 18 after 20k iteration. And the visulization shows the control result is not very optimal.
 
